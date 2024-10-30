@@ -10,6 +10,27 @@
 }
 
 body {
-    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background: #222222;
+    
+}
+
+.container{
+    background: #ffffff;
+    border-radius: 10px;
+    max-width: 425px;
+    flex-grow: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+}
+
+.hourly-weather .weather-list {
+    display: flex;
+}
+
+.hourly-weather .weather-item .weather-icon {
+    width: 28px;
+    aspect-ratio: 1;
 }
