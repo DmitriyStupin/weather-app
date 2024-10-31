@@ -40,7 +40,7 @@ const dispayHourlyForecast = (hourlyData) => {
 
 const getWeatherDetails = async (API_URL) => {
     window.innerWidth <= 768 && searchInput.blur();
-    document.body.classList.remove('show-no-result');
+    document.body.classList.remove('show-no-results');
     try {
         const response = await fetch(API_URL);
         const data = await response.json();
@@ -59,7 +59,7 @@ const getWeatherDetails = async (API_URL) => {
 
         searchInput.value = data.location.name;
     } catch (error) {
-        document.body.classList.add('show-no-result');
+        document.body.classList.add('show-no-results');
     }
 }
 
