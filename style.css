@@ -111,7 +111,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-body.show-no-results .no-results{
+body.show-no-results .no-results {
     display: flex;
 }
 

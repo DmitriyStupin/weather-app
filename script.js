@@ -5,6 +5,7 @@ const hourlyWeatherDiv = document.querySelector('.hourly-weather .weather-list')
 
 const API_KEY = "d01a053fb4fb461ea92180440243010";
 
+// Существующие коды погоды
 const weatherCodes = {
     clear: [1000],
     clouds: [1003, 1006, 1009],
