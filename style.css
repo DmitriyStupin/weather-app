@@ -23,6 +23,8 @@ body {
     border-radius: 10px;
     max-width: 425px;
     flex-grow: 1;
+    position: relative;
+    overflow: hiddenk;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
 }
 
@@ -95,6 +97,36 @@ body {
     font-size: 1.3rem;
 }
 
+.no-results {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+}
+
+body.show-no-results .no-results{
+    display: flex;
+}
+
+.no-results .title {
+    margin: 25px 0 15px;
+}
+
+.no-results .message {
+    font-weight: 500;
+}
+
+body.show-no-results .weather-section {
+    visibility: hidden;
+}
+
 .weather-section .current-weather {
     display: flex;
     align-items: center;
@@ -102,7 +134,7 @@ body {
     flex-direction: column;
 }
 
-.current-weather .weather-iconk{
+.current-weather .weather-iconk {
     width: 140px;
     aspect-ratio: 1;
 }
@@ -132,7 +164,7 @@ body {
 .hourly-weather .weather-list {
     display: flex;
     list-style: none;
-    gap: 43px;
+    gap: 38px;
     padding-bottom: 16px;
     margin-bottom: -16px;
     overflow-x: auto;
@@ -140,11 +172,11 @@ body {
     scrollbar-color: transparent transparent;
 }
 
-.hourly-weather:hover .weather-list{
+.hourly-weather:hover .weather-list {
     scrollbar-color: #c5c3c3 transparent;
 }
 
-.hourly-weather .weather-item{
+.hourly-weather .weather-item {
     display: flex;
     flex-direction: column;
     gap: 7px;
